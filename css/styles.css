@@ -1,0 +1,141 @@
+/* --- Estilos generales --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(
+       120deg,
+        #8687cc,   
+        #615fea,   
+        #625ba3,   
+        #575555
+    );
+    background-size: 500% 500%;
+    animation: gradientMove 35s ease infinite;  
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 20% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 15% 50%;
+    }
+}
+
+
+
+/* --- Encabezado --- */
+header {
+    text-align: center;
+    padding: 20px;
+    background: #3f4244;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+header img {
+    width: 150px;
+    margin-top: 15px;
+    border-radius: 50%;
+    border: 3px solid rgb(122, 101, 101);
+}
+
+/* --- Secciones --- */
+section {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+ }
+
+/* --- Artículos --- */
+article {
+    background: rgb(84, 85, 85);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* --- Títulos --- */
+article h2 {
+    color: #e7e7e7;
+    margin-bottom: 10px;
+}
+
+/* --- Listas --- */
+ul, ol {
+    margin-left: 20px;
+}
+
+ul li, ol li {
+    margin-bottom: 5px;
+}
+
+/* --- Cajas --- */
+.info-box,
+.exp-box,
+.form-box,
+.comp-box,
+.habil-box {
+    background: linear-gradient(135deg, grey, #21647af6);
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+.info-box ul li {
+    padding: 5px 0;
+}
+
+/* --- Pie de página --- */
+footer {
+    background-color: #3f4244;
+    padding: 21px;
+    text-align: center;
+    margin-top: 31px;
+    color: #e7e7e7;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    padding: 8px 0;
+}
+
+/* --- Botones footer --- */
+footer a {
+    display: block;
+    color: #e7e7e7;
+    text-decoration: none;
+    background-color: #5a5e61;
+    padding: 11px 19px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-top: 12px;
+}
+
+footer a:hover {
+    background-color: #777c80;
+}
+
+/* --- Línea hr --- */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #f9f9f9;
+    opacity: 0.3;
+}
